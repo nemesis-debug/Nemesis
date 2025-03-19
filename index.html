@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Information and Media Sources</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #4e54c8, #8f94fb);
+            color: #fff;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.5);
+        }
+        header img {
+            height: 50px;
+        }
+        nav {
+            display: flex;
+            gap: 15px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        nav a:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+        main {
+            padding: 20px;
+        }
+        section {
+            margin-bottom: 30px;
+            display: flex;
+            align-items: flex-start;
+        }
+        section img {
+            max-width: 250px;
+            margin-left: 15px;
+            border-radius: 10px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.5);
+        }
+        footer form {
+            margin-top: 10px;
+        }
+        footer input[type="text"] {
+            padding: 7px;
+            margin: 5px 0;
+            border-radius: 5px;
+            border: none;
+        }
+        footer input[type="submit"] {
+            padding: 10px 15px;
+            border-radius: 5px;
+            border: none;
+            background: #4e54c8;
+            color: white;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        footer input[type="submit"]:hover {
+            background: #8f94fb;
+        }
+        /* Mobile Responsiveness */
+        @media screen and (max-width: 600px) {
+            header, section {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            section img {
+                margin-left: 0;
+                margin-top: 15px;
+            }
+            nav {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="your-logo.png" alt="Logo">
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#upcoming">Upcoming</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<main>
+    <section id="information-types">
+        <div>
+            <h2>Types of Information</h2>
+            <p>1. Primary Information – Firsthand or original data, such as research studies, interviews, surveys, and eyewitness reports.</p>
+            <p>2. Secondary Information – Interpretation or analysis of primary sources, such as textbooks, reviews, and documentaries.</p>
+            <p>3. Tertiary Information – A summary or compilation of primary and secondary sources, like encyclopedias, indexes, and databases.</p>
+        </div>
+        <img src="your-information-image.jpg" alt="Information Image">
+    </section>
+
+    <section id="media-types">
+        <img src="your-media-image.jpg" alt="Media Image">
+        <div>
+            <h2>Types of Media Sources</h2>
+            <p>1. Traditional Media – Print (newspapers, magazines), broadcast (radio, TV), and outdoor (billboards, posters).</p>
+            <p>2. Digital Media – Websites, social media, blogs, and online articles.</p>
+            <p>3. Multimedia – A combination of text, images, audio, video, and interactive content (e.g., YouTube videos, podcasts).</p>
+        </div>
+    </section>
+
+    <section id="evaluate-sources">
+        <div>
+            <h2>How to Evaluate Media and Information Sources</h2>
+            <p>1. Accuracy – Check if the information is supported by evidence and sources.</p>
+            <p>2. Credibility – Consider the author's expertise, reputation, and affiliations.</p>
+            <p>3. Objectivity – Look for bias and whether the source presents balanced viewpoints.</p>
+            <p>4. Currency – Ensure the information is up-to-date and relevant.</p>
+            <p>5. Relevance – Determine if the content fits your needs and purpose.</p>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <h2>Quiz: Test Your Knowledge</h2>
+    <form id="quiz-form">
+        <input type="text" placeholder="Question 1?" required>
+        <input type="text" placeholder="Question 2?" required>
+        <input type="text" placeholder="Question 3?" required>
+        <input type="text" placeholder="Question 4?" required>
+        <input type="text" placeholder="Question 5?" required>
+        <input type="submit" value="Submit">
+    </form>
+</footer>
+
+<script>
+    document.getElementById('quiz-form').addEventListener('submit', function(e) {
+        e.preventDefault();
+        alert('Quiz submitted! Thank you!');
+    });
+</script>
+</body>
+</html>
